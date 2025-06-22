@@ -1,6 +1,6 @@
 <script setup>
 import Card from '@/components/Card.vue'
-import photo from '../../public/image/image-removebg-preview.png' // adjust path if needed
+import photo from '@/../public/image/image-removebg-preview.png' // adjust path if needed
 
 import {
   ArrowRight as ArrowRightIcon,
