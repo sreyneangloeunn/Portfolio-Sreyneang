@@ -1,6 +1,7 @@
 <script setup>
 import Card from '@/components/Card.vue'
-import photo from '@/../public/image/image-removebg-preview.png' // adjust path if needed
+import photo from '/image/image-removebg-preview.png';
+ // adjust path if needed
 
 import {
   ArrowRight as ArrowRightIcon,
@@ -41,56 +42,54 @@ const cards = [
     I’m passionate about crafting elegant web applications that combine clean, intuitive front-end design with strong, scalable back-end functionality. I enjoy solving complex problems and turning ideas into seamless digital experiences that users love. Continuously learning and evolving, I aim to build solutions that are both beautiful and powerful.
   </p>
 
- <div class="flex flex-wrap gap-6 justify-center">
-  <Card
-    title="Projects"
-    description="Discover my creative work."
-    buttonText="Explore"
-    link="#projects"
-    :buttonClass="`
-      bg-gradient-to-r from-purple-500 to-indigo-600 
-      text-white text-xs font-semibold px-4 py-1.5 
-      rounded-full shadow-lg 
-      hover:from-purple-600 hover:to-indigo-700 
-      active:scale-95 
-      transition-all duration-300
-      `
-    "
-    class="max-w-[14rem] p-4 bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition-shadow duration-300"
-  />
-  <Card
-    title="Resume"
-    description="See my skills & experience."
-    buttonText="View"
-    link="#resume"
-    :buttonClass="`
-      bg-gradient-to-r from-purple-500 to-indigo-600 
-      text-white text-xs font-semibold px-4 py-1.5 
-      rounded-full shadow-lg 
-      hover:from-purple-600 hover:to-indigo-700 
-      active:scale-95 
-      transition-all duration-300
-      `
-    "
-    class="max-w-[14rem] p-4 bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition-shadow duration-300"
-  />
-  <Card
-    title="Testimonials"
-    description="What clients say."
-    buttonText="Read"
-    link="#testimonials"
-    :buttonClass="`
-      bg-gradient-to-r from-purple-500 to-indigo-600 
-      text-white text-xs font-semibold px-4 py-1.5 
-      rounded-full shadow-lg 
-      hover:from-purple-600 hover:to-indigo-700 
-      active:scale-95 
-      transition-all duration-300
-      `
-    "
-    class="max-w-[14rem] p-4 bg-white rounded-xl shadow-lg flex flex-col justify-between hover:shadow-2xl transition-shadow duration-300"
-  />
-</div>
+  <div class="flex flex-wrap justify-center gap-6">
+    <Card
+      title="Projects"
+      description="Explore my creative work and applications."
+      buttonText="Explore"
+      link="#projects"
+      :buttonClass="`
+        bg-gradient-to-r from-purple-500 to-indigo-600 
+        text-white text-sm font-semibold px-4 py-2 
+        rounded-full shadow-md 
+        hover:from-purple-600 hover:to-indigo-700 
+        active:scale-95 
+        transition-all duration-300
+      `"
+      class="w-[13rem] p-4 bg-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 text-[13px]"
+    />
+    <Card
+      title="Resume"
+      description="View my background and skills."
+      buttonText="View"
+      link="#resume"
+      :buttonClass="`
+        bg-gradient-to-r from-purple-500 to-indigo-600 
+        text-white text-sm font-semibold px-4 py-2 
+        rounded-full shadow-md 
+        hover:from-purple-600 hover:to-indigo-700 
+        active:scale-95 
+        transition-all duration-300
+      `"
+      class="w-[13rem] p-4 bg-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 text-[13px]"
+    />
+    <Card
+      title="Testimonials"
+      description="Hear from clients and colleagues."
+      buttonText="Read"
+      link="#testimonials"
+      :buttonClass="`
+        bg-gradient-to-r from-purple-500 to-indigo-600 
+        text-white text-sm font-semibold px-4 py-2 
+        rounded-full shadow-md 
+        hover:from-purple-600 hover:to-indigo-700 
+        active:scale-95 
+        transition-all duration-300
+      `"
+      class="w-[13rem] p-4 bg-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 text-[13px]"
+    />
+  </div>
+
 
 </div>
 
@@ -162,7 +161,7 @@ const cards = [
     <footer class="mt-10 bg-[#DDEDFF] py-4">
   <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
     <div class="flex items-center gap-3">
-      <img src="../../public/image/photo_2025-02-22_22-16-40.jpg" alt="Sreyneang Loeun" class="h-10 w-10 rounded-full object-cover border-2 border-white shadow" />
+      <img src="/image/photo_2025-02-22_22-16-40.jpg" alt="Sreyneang Loeun" class="h-10 w-10 rounded-full object-cover border-2 border-white shadow" />
       <span class="font-bold">SREYNEANG LOEUN</span>
     </div>
     <span class="text-gray-600 mt-2 sm:mt-0">Design By: Sreyneang Loeun</span>
