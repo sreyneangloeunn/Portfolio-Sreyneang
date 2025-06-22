@@ -37,7 +37,7 @@ const cards = [
         </p>
 
         <p class="text-gray-700 mb-6">
-          I’m passionate about crafting elegant web applications that combine clean, intuitive front-end design with strong, scalable back-end functionality.
+          I’m passionate about crafting elegant web applications that combine clean, intuitive front-end design with strong, scalable back-end functionality. I enjoy solving complex problems and turning ideas into seamless digital experiences that users love. Continuously learning and evolving, I aim to build solutions that are both beautiful and powerful.
         </p>
 
         <div class="flex flex-wrap justify-center gap-6">
@@ -47,14 +47,15 @@ const cards = [
             buttonText="Explore"
             link="#projects"
             :buttonClass="`
-              bg-gradient-to-r from-purple-500 to-indigo-600 
-              text-white text-sm font-semibold px-4 py-2 
-              rounded-full shadow-md 
-              hover:from-purple-600 hover:to-indigo-700 
+              bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 
+              text-white text-sm font-medium px-4 py-2 
+              rounded-full shadow-lg 
+              hover:from-purple-700 hover:via-indigo-600 hover:to-blue-700 
+              hover:shadow-xl 
               active:scale-95 
-              transition-all duration-300
+              transition-all duration-300 ease-out
             `"
-            class="w-[13rem] p-4 bg-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 text-[13px]"
+            class="w-[14rem] p-4 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-[13px] font-sans"
           />
           <Card
             title="Resume"
@@ -62,14 +63,15 @@ const cards = [
             buttonText="View"
             link="#resume"
             :buttonClass="`
-              bg-gradient-to-r from-purple-500 to-indigo-600 
-              text-white text-sm font-semibold px-4 py-2 
-              rounded-full shadow-md 
-              hover:from-purple-600 hover:to-indigo-700 
+              bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 
+              text-white text-sm font-medium px-4 py-2 
+              rounded-full shadow-lg 
+              hover:from-purple-700 hover:via-indigo-600 hover:to-blue-700 
+              hover:shadow-xl 
               active:scale-95 
-              transition-all duration-300
+              transition-all duration-300 ease-out
             `"
-            class="w-[13rem] p-4 bg-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 text-[13px]"
+            class="w-[14rem] p-4 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-[13px] font-sans"
           />
           <Card
             title="Testimonials"
@@ -77,14 +79,15 @@ const cards = [
             buttonText="Read"
             link="#testimonials"
             :buttonClass="`
-              bg-gradient-to-r from-purple-500 to-indigo-600 
-              text-white text-sm font-semibold px-4 py-2 
-              rounded-full shadow-md 
-              hover:from-purple-600 hover:to-indigo-700 
+              bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 
+              text-white text-sm font-medium px-4 py-2 
+              rounded-full shadow-lg 
+              hover:from-purple-700 hover:via-indigo-600 hover:to-blue-700 
+              hover:shadow-xl 
               active:scale-95 
-              transition-all duration-300
+              transition-all duration-300 ease-out
             `"
-            class="w-[13rem] p-4 bg-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition duration-300 text-[13px]"
+            class="w-[14rem] p-4 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-[13px] font-sans"
           />
         </div>
       </div>
