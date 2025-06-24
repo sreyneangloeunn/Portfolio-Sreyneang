@@ -40,56 +40,32 @@ const cards = [
           I’m passionate about crafting elegant web applications that combine clean, intuitive front-end design with strong, scalable back-end functionality. I enjoy solving complex problems and turning ideas into seamless digital experiences that users love. Continuously learning and evolving, I aim to build solutions that are both beautiful and powerful.
         </p>
 
-        <div class="flex flex-wrap justify-center gap-6">
-          <Card
-            title="Projects"
-            description="Explore my creative work and applications."
-            buttonText="Explore"
-            link="#projects"
-            :buttonClass="`
-              bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 
-              text-white text-xs font-medium px-3 py-1.5 
-              rounded-full shadow-md 
-              hover:from-purple-700 hover:via-indigo-600 hover:to-blue-700 
-              hover:shadow-lg 
-              active:scale-95 
-              transition-all duration-300 ease-out
-            `"
-            class="w-[11rem] p-3 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-[12px] font-sans"
-          />
-          <Card
-            title="Resume"
-            description="View my background and skills."
-            buttonText="View"
-            link="#resume"
-            :buttonClass="`
-              bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 
-              text-white text-xs font-medium px-3 py-1.5 
-              rounded-full shadow-md 
-              hover:from-purple-700 hover:via-indigo-600 hover:to-blue-700 
-              hover:shadow-lg 
-              active:scale-95 
-              transition-all duration-300 ease-out
-            `"
-            class="w-[11rem] p-3 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-[12px] font-sans"
-          />
-          <Card
-            title="Testimonials"
-            description="Hear from clients and colleagues."
-            buttonText="Read"
-            link="#testimonials"
-            :buttonClass="`
-              bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 
-              text-white text-xs font-medium px-3 py-1.5 
-              rounded-full shadow-md 
-              hover:from-purple-700 hover:via-indigo-600 hover:to-blue-700 
-              hover:shadow-lg 
-              active:scale-95 
-              transition-all duration-300 ease-out
-            `"
-            class="w-[11rem] p-3 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-[12px] font-sans"
-          />
-        </div>
+       <div class="flex justify-center gap-4 bg-gray-100 p-4 rounded-2xl w-fit mx-auto">
+  <!-- Projects -->
+  <a href="#projects" class="flex flex-col items-center justify-center bg-white rounded-xl w-20 h-20 shadow-sm hover:shadow-md transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-1 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L8 19.5m4-2.5l1.75 2.5m-5.5-8h4.5M9 12V7m6 5h-2.25M15 12v-3.75M12 3v4.5m-7 5v1.5A2.25 2.25 0 007.25 16H9" />
+    </svg>
+    <span class="text-[12px] font-medium text-gray-700">Project</span>
+  </a>
+
+  <!-- Resume -->
+  <a href="#resume" class="flex flex-col items-center justify-center bg-white rounded-xl w-20 h-20 shadow-sm hover:shadow-md transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-1 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h14v16H5V4z" />
+    </svg>
+    <span class="text-[12px] font-medium text-gray-700">Resume</span>
+  </a>
+
+  <!-- Testimonials -->
+  <a href="#testimonials" class="flex flex-col items-center justify-center bg-white rounded-xl w-20 h-20 shadow-sm hover:shadow-md transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-1 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v7h-2a2 2 0 01-2-2V8zM7 8H5a2 2 0 00-2 2v7h2a2 2 0 002-2V8z" />
+    </svg>
+    <span class="text-[12px] font-medium text-gray-700">Testimonials</span>
+  </a>
+</div>
+
 
       </div>
 
