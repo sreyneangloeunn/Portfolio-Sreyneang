@@ -48,14 +48,14 @@ const cards = [
             link="#projects"
             :buttonClass="`
               bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 
-              text-white text-sm font-medium px-4 py-2 
-              rounded-full shadow-lg 
+              text-white text-xs font-medium px-3 py-1.5 
+              rounded-full shadow-md 
               hover:from-purple-700 hover:via-indigo-600 hover:to-blue-700 
-              hover:shadow-xl 
+              hover:shadow-lg 
               active:scale-95 
               transition-all duration-300 ease-out
             `"
-            class="w-[14rem] p-4 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-[13px] font-sans"
+            class="w-[11rem] p-3 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-[12px] font-sans"
           />
           <Card
             title="Resume"
@@ -64,14 +64,14 @@ const cards = [
             link="#resume"
             :buttonClass="`
               bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 
-              text-white text-sm font-medium px-4 py-2 
-              rounded-full shadow-lg 
+              text-white text-xs font-medium px-3 py-1.5 
+              rounded-full shadow-md 
               hover:from-purple-700 hover:via-indigo-600 hover:to-blue-700 
-              hover:shadow-xl 
+              hover:shadow-lg 
               active:scale-95 
               transition-all duration-300 ease-out
             `"
-            class="w-[14rem] p-4 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-[13px] font-sans"
+            class="w-[11rem] p-3 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-[12px] font-sans"
           />
           <Card
             title="Testimonials"
@@ -80,16 +80,17 @@ const cards = [
             link="#testimonials"
             :buttonClass="`
               bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 
-              text-white text-sm font-medium px-4 py-2 
-              rounded-full shadow-lg 
+              text-white text-xs font-medium px-3 py-1.5 
+              rounded-full shadow-md 
               hover:from-purple-700 hover:via-indigo-600 hover:to-blue-700 
-              hover:shadow-xl 
+              hover:shadow-lg 
               active:scale-95 
               transition-all duration-300 ease-out
             `"
-            class="w-[14rem] p-4 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-[13px] font-sans"
+            class="w-[11rem] p-3 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-[12px] font-sans"
           />
         </div>
+
       </div>
 
       <!-- Right Photo Section -->
