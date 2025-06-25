@@ -1,45 +1,41 @@
 <template>
-  <header class="bg-[#DDEDFF] shadow-md py-4">
-    <div class="wrapper max-w-7xl mx-auto px-4">
-      <nav class="flex items-center justify-between">
-        <!-- Left: Logo + Name -->
-        <div class="flex items-center space-x-3">
-          <img
-            :src="logo"
-            alt="/image/photo_2025-02-22_22-16-40.jpg"
-            class="h-10 w-10 rounded-full object-cover ring-2 ring-white shadow"
-          />
-          <span class="text-xl font-bold text-gray-800 tracking-wide">
-            {{ name }}
-          </span>
-        </div>
+  <header class="bg-[#ADD8FF] shadow">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col items-center">
+      <!-- Profile Image & Name -->
+      <div class="flex items-center gap-3 mb-3">
+        <img
+          :src="profile.image"
+          :alt="profile.name"
+          class="h-10 w-10 rounded-full object-cover border-2 border-white shadow"
+        />
+        <span class="font-bold text-gray-800 text-lg">{{ profile.name }}</span>
+      </div>
 
-        <!-- Right: Role -->
-        <div class="text-gray-700 text-sm md:text-base font-medium italic">
-          {{ role }}
-        </div>
-      </nav>
-    </div>
+      <!-- Navigation Links with Icons -->
+      <div class="flex items-center gap-6 flex-wrap justify-center">
+        <router-link
+          v-for="navItem in navItems"
+          :key="navItem.label"
+          :to="navItem.link"
+          class="text-gray-800 hover:text-blue-600 font-medium transition flex items-center gap-2"
+        >
+          <component :is="navItem.icon" class="h-5 w-5" />
+          {{ navItem.label }}
+        </router-link>
+      </div>
+    </nav>
   </header>
 </template>
 
 <script setup>
 defineProps({
-  logo: {
-    type: String,
+  navItems: {
+    type: Array,
     required: true
   },
-  name: {
-    type: String,
-    default: 'Sreyneang Loeun'
-  },
-  role: {
-    type: String,
-    default: 'Web Developer'
+  profile: {
+    type: Object,
+    required: true
   }
 })
 </script>
-
-<style scoped>
-/* Optional: fine-tune appearance here */
-</style>
