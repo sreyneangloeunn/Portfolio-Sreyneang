@@ -42,6 +42,51 @@
             <p class="text-gray-700">Street 371, Phumpeang Chhuk (Borey Sorla), Sangkat Tek Thla, Khan Sen Sok, Phnom Penh</p>
           </div>
         </div>
+
+        <!-- Social Media Links -->
+        <div class="mt-6">
+          <p class="text-gray-700 text-base mb-4">Follow me on social media:</p>
+          <div class="flex justify-start gap-6">
+            <a
+              href="https://www.facebook.com/sreyneang.loeun"
+              target="_blank"
+              rel="noopener"
+              class="hover:scale-125 transition-transform duration-300"
+            >
+              <img src="@/assets/icon/facebook.svg" alt="Facebook" class="w-7 h-7" />
+            </a>
+            <a
+              href="mailto:loeurnsreyneang05052006@gmail.com"
+              class="hover:scale-125 transition-transform duration-300"
+            >
+              <img src="@/assets/icon/google.svg" alt="Email" class="w-7 h-7" />
+            </a>
+            <a
+              href="https://t.me/SreyneangLoeun"
+              target="_blank"
+              rel="noopener"
+              class="hover:scale-125 transition-transform duration-300"
+            >
+              <img src="@/assets/icon/telegram.svg" alt="Telegram" class="w-7 h-7" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sreyneang-loeun-58b129343/"
+              target="_blank"
+              rel="noopener"
+              class="hover:scale-125 transition-transform duration-300"
+            >
+              <img src="@/assets/icon/linkedin.svg" alt="LinkedIn" class="w-7 h-7" />
+            </a>
+            <a
+              href="https://www.instagram.com/loeurnsreyneang/"
+              target="_blank"
+              rel="noopener"
+              class="hover:scale-125 transition-transform duration-300"
+            >
+              <img src="@/assets/icon/instagram.svg" alt="Instagram" class="w-7 h-7" />
+            </a>
+          </div>
+        </div>
       </div>
 
       <!-- Contact Form -->
