@@ -85,7 +85,7 @@
       <div class="flex flex-col lg:flex-row items-center lg:items-center gap-8">
         <!-- School Picture Left -->
         <img
-          src="../../public/image/photo_2025-07-02_22-53-36.jpg"
+          src="/image/photo_2025-07-02_22-53-36.jpg"
           alt="Srae Pongruol Primary School"
           class="w-full max-w-md rounded-lg object-cover border-4 border-blue-300 dark:border-blue-500 shadow-md hover:scale-105 transition-transform duration-300"
         />
@@ -111,7 +111,7 @@
     <div class="flex flex-col lg:flex-row items-center lg:items-center gap-8">
       <!-- School Picture Left -->
       <img
-        src="../../public/image/photo_2025-07-02_22-53-36 (2).jpg"
+        src="/image/photo_2025-07-02_22-53-36 (2).jpg"
         alt="Samdech Ov Mae Phnom Kravanh Lower Secondary School"
         class="w-full max-w-md rounded-lg object-cover border-4 border-blue-300 dark:border-blue-500 shadow-md hover:scale-105 transition-transform duration-300"
       />
@@ -136,7 +136,7 @@
     <div class="flex flex-col lg:flex-row items-center lg:items-center gap-8">
       <!-- School Picture Left -->
       <img
-        src="../../public/image/photo_2025-07-02_22-53-35.jpg"
+        src="/image/photo_2025-07-02_22-53-35.jpg"
         alt="Hun Sen Phnom Kravanh High School"
         class="w-full max-w-md rounded-lg object-cover border-4 border-blue-300 dark:border-blue-500 shadow-md hover:scale-105 transition-transform duration-300"
       />
