@@ -22,7 +22,7 @@ const navItems = [
   { label: 'About Me', link: '/about', icon: UserIcon },
   // { label: 'Services', link: '/services', icon: HeadphonesIcon },
   // { label: 'Blog', link: '/blog', icon: BookOpenIcon },
-  { label: 'Skill', link: '/skill', icon: DocumentTextIcon },
+  { label: 'Skills', link: '/skill', icon: DocumentTextIcon },
   { label: 'Projects', link: '/project', icon: FolderIcon },
   { label: 'Contact', link: '/contact', icon: EnvelopeIcon }
 ]
