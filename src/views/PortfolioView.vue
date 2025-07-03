@@ -1,33 +1,37 @@
 <template>
-  <main class="bg-[#EAF6FF] min-h-screen py-10 px-4">
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+  <main class="bg-[#EAF6FF] min-h-screen py-8 px-4 sm:py-10 sm:px-6 md:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 sm:gap-10">
       <!-- Left Text Section -->
-      <div class="bg-[#B4DCFF] p-8 rounded-xl shadow-lg w-full sm:w-[70vw] max-w-4xl mx-auto animate-fade-in">
-        <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-snug animate-slide-up">
+      <div
+        class="bg-[#B4DCFF] p-6 sm:p-8 rounded-xl shadow-lg w-full sm:w-[70vw] max-w-4xl mx-auto animate-fade-in"
+      >
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4 leading-snug animate-slide-up">
           Hello, I’m <span class="text-red-600">Sreyneang Loeun</span><br />
           <span class="text-gray-800">Web Developer !!</span>
         </h1>
-        <p class="text-md font-semibold text-gray-900 mb-4 animate-slide-up delay-200">
+        <p class="text-sm sm:text-md font-semibold text-gray-900 mb-4 animate-slide-up delay-200">
           <strong>Frontend & Backend</strong> | Passionate about building meaningful digital experiences
         </p>
-        <p class="text-gray-700 mb-6 animate-slide-up delay-400">
+        <p class="text-gray-700 mb-5 sm:mb-6 animate-slide-up delay-400 text-sm sm:text-base">
           I’m passionate about crafting elegant web applications that combine clean, intuitive front-end design with solid, scalable back-end functionality.
         </p>
-        <p class="text-gray-700 mb-6 animate-slide-up delay-600">
+        <p class="text-gray-700 mb-5 sm:mb-6 animate-slide-up delay-600 text-sm sm:text-base">
           As a web development student, I have developed skills in both front-end and back-end technologies, allowing me to create seamless and efficient full-stack web applications. I enjoy learning and applying best practices to deliver user-friendly and reliable digital solutions.
         </p>
-        <div class="flex flex-wrap justify-center gap-6 animate-fade-in-up delay-800">
+        <div class="flex flex-wrap justify-center gap-5 sm:gap-6 animate-fade-in-up delay-800">
           <!-- Project -->
           <a
             href="https://github.com/sreyneangloeunn"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex flex-col items-center justify-center bg-white rounded-xl w-20 h-20 shadow-md hover:shadow-xl hover:scale-110 transition-transform duration-300 ease-out group"
+            class="flex flex-col items-center justify-center bg-white rounded-xl w-16 h-16 sm:w-20 sm:h-20 shadow-md hover:shadow-xl hover:scale-110 transition-transform duration-300 ease-out group"
           >
-            <div class="bg-[#DDEDFF] p-2 rounded-full mb-1 group-hover:scale-125 transition-transform duration-300">
+            <div
+              class="bg-[#DDEDFF] p-2 rounded-full mb-1 group-hover:scale-125 transition-transform duration-300"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 text-blue-600"
+                class="w-4 h-4 sm:w-5 sm:h-5 text-blue-600"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -36,27 +40,31 @@
                 />
               </svg>
             </div>
-            <span class="text-xs font-medium text-gray-700">GitHub</span>
+            <span class="text-xs sm:text-sm font-medium text-gray-700">GitHub</span>
           </a>
           <!-- Resume -->
           <router-link
             to="/resume"
-            class="flex flex-col items-center justify-center bg-white rounded-xl w-20 h-20 shadow-md hover:shadow-xl hover:scale-110 transition-transform duration-300 ease-out group"
+            class="flex flex-col items-center justify-center bg-white rounded-xl w-16 h-16 sm:w-20 sm:h-20 shadow-md hover:shadow-xl hover:scale-110 transition-transform duration-300 ease-out group"
           >
-            <div class="bg-[#DDEDFF] p-2 rounded-full mb-1 group-hover:scale-125 transition-transform duration-300">
-              <DocumentTextIcon class="w-5 h-5 text-blue-600" />
+            <div
+              class="bg-[#DDEDFF] p-2 rounded-full mb-1 group-hover:scale-125 transition-transform duration-300"
+            >
+              <DocumentTextIcon class="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
             </div>
-            <span class="text-xs font-medium text-gray-700">Resume/CV</span>
+            <span class="text-xs sm:text-sm font-medium text-gray-700">Resume/CV</span>
           </router-link>
           <!-- Contact Me -->
           <router-link
             to="/contact"
-            class="flex flex-col items-center justify-center bg-white rounded-xl w-20 h-20 shadow-md hover:shadow-xl hover:scale-110 transition-transform duration-300 ease-out group"
+            class="flex flex-col items-center justify-center bg-white rounded-xl w-16 h-16 sm:w-20 sm:h-20 shadow-md hover:shadow-xl hover:scale-110 transition-transform duration-300 ease-out group"
           >
-            <div class="bg-[#DDEDFF] p-2 rounded-full mb-1 group-hover:scale-125 transition-transform duration-300">
-              <EnvelopeIcon class="w-5 h-5 text-[#00AEEF]" />
+            <div
+              class="bg-[#DDEDFF] p-2 rounded-full mb-1 group-hover:scale-125 transition-transform duration-300"
+            >
+              <EnvelopeIcon class="w-4 h-4 sm:w-5 sm:h-5 text-[#00AEEF]" />
             </div>
-            <span class="text-xs font-medium text-[#00AEEF]">Contact Me</span>
+            <span class="text-xs sm:text-sm font-medium text-[#00AEEF]">Contact Me</span>
           </router-link>
         </div>
       </div>
@@ -66,34 +74,39 @@
         <img
           src="/image/image-removebg-preview.png"
           alt="Sreyneang Loeun"
-          class="rounded-xl h-[490px] w-auto shadow-2xl object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
+          class="rounded-xl h-[350px] sm:h-[450px] md:h-[490px] w-auto shadow-2xl object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
         />
       </div>
     </div>
 
     <!-- Social Section -->
-    <div class="mt-10 bg-[#CFE9FF] p-6 rounded-xl shadow-md text-center w-[86%] mx-auto animate-fade-in-up delay-1000">
-      <h2 class="text-xl font-bold text-gray-800 mb-2 animate-pulse">
+    <div
+      class="mt-8 sm:mt-10 bg-[#CFE9FF] p-5 sm:p-6 rounded-xl shadow-md text-center w-[90%] sm:w-[86%] mx-auto animate-fade-in-up delay-1000"
+    >
+      <h2 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 animate-pulse">
         🌟 Let’s Stay <span class="text-red-600">Connected!!</span>
       </h2>
-      <div class="flex flex-col items-center gap-4">
-        <p class="text-gray-700 max-w-2xl text-base text-center animate-slide-up delay-1200">
-          Follow me on social media for creative inspiration, behind the scenes content, and updates on my latest work.
+      <div class="flex flex-col items-center gap-3 sm:gap-4">
+        <p
+          class="text-gray-700 max-w-2xl text-sm sm:text-base text-center animate-slide-up delay-1200"
+        >
+          Follow me on social media for creative inspiration, behind the scenes content,
+          and updates on my latest work.
         </p>
-        <div class="flex justify-center gap-6 mt-2">
+        <div class="flex justify-center gap-4 sm:gap-6 mt-2">
           <a
             href="https://www.facebook.com/sreyneang.loeun"
             target="_blank"
             rel="noopener"
             class="hover:scale-125 transition-transform duration-300"
           >
-            <img src="@/assets/icon/facebook.svg" alt="Facebook" class="w-7 h-7" />
+            <img src="@/assets/icon/facebook.svg" alt="Facebook" class="w-6 sm:w-7 h-6 sm:h-7" />
           </a>
           <a
             href="mailto:loeurnsreyneang05052006@gmail.com"
             class="hover:scale-125 transition-transform duration-300"
           >
-            <img src="@/assets/icon/google.svg" alt="Email" class="w-7 h-7" />
+            <img src="@/assets/icon/google.svg" alt="Email" class="w-6 sm:w-7 h-6 sm:h-7" />
           </a>
           <a
             href="https://t.me/SreyneangLoeun"
@@ -101,7 +114,7 @@
             rel="noopener"
             class="hover:scale-125 transition-transform duration-300"
           >
-            <img src="@/assets/icon/telegram.svg" alt="Telegram" class="w-7 h-7" />
+            <img src="@/assets/icon/telegram.svg" alt="Telegram" class="w-6 sm:w-7 h-6 sm:h-7" />
           </a>
           <a
             href="https://www.linkedin.com/in/sreyneang-loeun-58b129343/"
@@ -109,7 +122,7 @@
             rel="noopener"
             class="hover:scale-125 transition-transform duration-300"
           >
-            <img src="@/assets/icon/linkedin.svg" alt="LinkedIn" class="w-7 h-7" />
+            <img src="@/assets/icon/linkedin.svg" alt="LinkedIn" class="w-6 sm:w-7 h-6 sm:h-7" />
           </a>
           <a
             href="https://www.instagram.com/loeurnsreyneang/"
@@ -117,17 +130,17 @@
             rel="noopener"
             class="hover:scale-125 transition-transform duration-300"
           >
-            <img src="@/assets/icon/instagram.svg" alt="Instagram" class="w-7 h-7" />
+            <img src="@/assets/icon/instagram.svg" alt="Instagram" class="w-6 sm:w-7 h-6 sm:h-7" />
           </a>
         </div>
       </div>
     </div>
   </main>
 
-  <AboutMeView/>
-  <SkillView/>
-  <ProjectView/>
-  <ContactView/>
+  <AboutMeView />
+  <SkillView />
+  <ProjectView />
+  <ContactView />
 </template>
 
 <script setup>
@@ -141,24 +154,51 @@ import SkillView from './SkillView.vue';
 
 <style scoped>
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes fadeInUp {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes fadeInRight {
-  from { transform: translateX(50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .animate-fade-in {
@@ -177,10 +217,22 @@ import SkillView from './SkillView.vue';
   animation: pulse 2s infinite;
 }
 
-.delay-200 { animation-delay: 0.2s; }
-.delay-400 { animation-delay: 0.4s; }
-.delay-600 { animation-delay: 0.6s; }
-.delay-800 { animation-delay: 0.8s; }
-.delay-1000 { animation-delay: 1s; }
-.delay-1200 { animation-delay: 1.2s; }
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-600 {
+  animation-delay: 0.6s;
+}
+.delay-800 {
+  animation-delay: 0.8s;
+}
+.delay-1000 {
+  animation-delay: 1s;
+}
+.delay-1200 {
+  animation-delay: 1.2s;
+}
 </style>

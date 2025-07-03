@@ -1,11 +1,42 @@
+<script setup>
+import { ref } from 'vue'
+import { HomeIcon, UserIcon, DocumentTextIcon, FolderIcon, StarIcon } from '@heroicons/vue/24/solid'
+
+const props = defineProps({
+  navItems: {
+    type: Array,
+    required: false,
+    default: () => [
+      { label: 'Home', link: '/', icon: HomeIcon },
+      { label: 'About Me', link: '/about', icon: UserIcon },
+      { label: 'Projects', link: '/projects', icon: FolderIcon },
+      { label: 'Skills', link: '/skills', icon: StarIcon },
+    ],
+  },
+  profile: {
+    type: Object,
+    required: false,
+    default: () => ({
+      name: 'SREYNEANG LOEUN',
+      image: '/image/photo_2025-02-22_22-16-40.jpg',
+    }),
+  },
+})
+
+// mobile menu open state
+const mobileMenuOpen = ref(false)
+function toggleMobileMenu() {
+  mobileMenuOpen.value = !mobileMenuOpen.value
+}
+</script>
+
 <template>
-  <!-- Navbar -->
   <header class="bg-[#ADD8FF] shadow fixed top-0 left-0 w-full z-50">
     <nav class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
       <!-- Name on the Left -->
       <span class="font-bold text-gray-800 text-lg md:text-xl">{{ profile.name }}</span>
 
-      <!-- Navigation Links in the Center -->
+      <!-- Desktop Navigation Links -->
       <div class="hidden md:flex items-center gap-6">
         <router-link
           v-for="navItem in navItems"
@@ -18,19 +49,48 @@
         </router-link>
       </div>
 
-      <!-- Profile Image on the Right -->
+      <!-- Profile Image + Mobile Hamburger Menu -->
       <div class="flex items-center gap-4">
         <img
           :src="profile.image"
           :alt="profile.name"
           class="h-12 w-12 rounded-full object-cover border-2 border-white shadow-md"
         />
+        <!-- Hamburger visible only on mobile -->
+        <button
+          @click="toggleMobileMenu"
+          class="md:hidden text-gray-800 hover:text-blue-600 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
     </nav>
+
+    <!-- Mobile menu, shows when toggled -->
+    <div v-if="mobileMenuOpen" class="md:hidden bg-[#ADD8FF] px-4 py-4 space-y-3">
+      <router-link
+        v-for="navItem in navItems"
+        :key="navItem.label"
+        :to="navItem.link"
+        class="block text-gray-800 hover:text-blue-600 font-medium transition flex items-center gap-2"
+        @click="mobileMenuOpen = false"
+      >
+        <component :is="navItem.icon" class="h-5 w-5 text-blue-600" />
+        {{ navItem.label }}
+      </router-link>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <main class="pt-20 bg-[#DDEDFF]">
+  <main class="pt-16 bg-[#DDEDFF]">
     <section class="max-w-7xl mx-auto px-4 py-12 text-center">
       <h1 class="text-4xl font-bold text-red-600 mb-4">Sreyneang Loeun</h1>
       <h2 class="text-3xl font-semibold text-gray-800 mb-4">Web Developer & Problem Solver</h2>
@@ -41,71 +101,16 @@
   </main>
 </template>
 
-<script setup>
-import { HomeIcon, UserIcon, DocumentTextIcon, FolderIcon, StarIcon } from '@heroicons/vue/24/solid';
-
-defineProps({
-  navItems: {
-    type: Array,
-    required: true,
-    default: () => [
-      { label: 'Home', link: '/', icon: HomeIcon },
-      { label: 'About Me', link: '/about', icon: UserIcon },
-      { label: 'Projects', link: '/projects', icon: FolderIcon },
-      { label: 'Skills', link: '/skills', icon: StarIcon },
-    ],
-  },
-  profile: {
-    type: Object,
-    required: true,
-    default: () => ({
-      name: 'SREYNEANG LOEUN',
-      image: '/image/photo_2025-02-22_22-16-40.jpg',
-    }),
-  },
-});
-</script>
-
 <style scoped>
-header {
-  background-color: #add8ff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-nav .flex.hidden {
-  display: flex;
-}
-
-nav .text-gray-800 {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #2d3748;
-  transition: color 0.3s ease;
-}
-
-nav .text-gray-800:hover {
-  color: #3182ce;
-}
-
-img {
-  border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
-  object-fit: cover;
-  border: 2px solid white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
+/* Tailwind's 'hidden md:flex' is already handling the nav visibility */
 @media (max-width: 768px) {
-  nav .hidden.md\\:flex {
-    display: none;
+  .hidden.md\:flex {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .hidden.md\:flex {
+    display: flex !important;
   }
 }
 </style>

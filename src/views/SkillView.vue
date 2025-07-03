@@ -1,9 +1,13 @@
 <template>
   <section class="bg-[#f0f7ff] min-h-screen p-8">
     <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold text-gray-800 animate__animated animate__fadeIn animate__delay-1s">My Skills</h1>
+      <h1 class="text-4xl font-bold text-gray-800 animate__animated animate__fadeIn animate__delay-1s">
+        My Skills
+      </h1>
       <div class="h-1 w-24 bg-blue-600 mx-auto my-2 rounded"></div>
-      <p class="text-gray-500 animate__animated animate__fadeIn animate__delay-2s">Technologies and tools I use to bring ideas to life</p>
+      <p class="text-gray-500 animate__animated animate__fadeIn animate__delay-2s">
+        Technologies and tools I use to bring ideas to life
+      </p>
     </div>
 
     <SkillCategory title="Programming Languages" :skills="languages" />
@@ -17,7 +21,7 @@
 import SkillCategory from '@/components/SkillCategory.vue'
 import SoftSkillCategory from '@/components/SoftSkill.vue'
 
-// Include Animate.css via CDN in your main index.html
+// Skills data arrays
 const languages = [
   { name: 'HTML5', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png' },
   { name: 'CSS3', icon: 'https://pngdownload.io/wp-content/uploads/2023/12/CSS-Logo-PNG-Symbol-for-Web-Development-Transparent-jpg.webp' },
@@ -30,7 +34,7 @@ const languages = [
 const frameworks = [
   { name: 'Vue.js', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png' },
   { name: 'Laravel', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/800px-Laravel.svg.png' },
-  { name: 'Bootstrap', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png    ' },
+  { name: 'Bootstrap', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png' },
   { name: 'Tailwind CSS', icon: 'https://avatars.githubusercontent.com/u/30317862?s=200&v=4' },
   { name: 'Node.js', icon: 'https://www.mindrops.com/images/nodejs-image.webp' },
 ]
@@ -51,7 +55,7 @@ const tools = [
 
 const softSkills = [
   "🤝 Teamwork",
-  " Time Management",
+  "⏰ Time Management",
   "🧭 Leadership",
   "🧠 Problem-Solving",
   "🎯 High Commitment",
@@ -60,32 +64,4 @@ const softSkills = [
   "🔄 Adaptability",
   "👥 Collaboration"
 ]
-
-
-defineProps({
-  title: {
-    type: String,
-    default: 'My Skills',
-  },
-  description: {
-    type: String,
-    default: 'Technologies and tools I use to bring ideas to life',
-  },
-  languages: {
-    type: Array,
-    default: () => [],
-  },
-  frameworks: {
-    type: Array,
-    default: () => [],
-  },
-  tools: {
-    type: Array,
-    default: () => [],
-  },
-  softSkills: {
-    type: Array,
-    default: () => [],
-  }
-})
-// <!-- </script> -->
+</script>
