@@ -1,5 +1,5 @@
 <template>
-  <div class="about-page max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800">
+  <div class="about-page max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800">
     <div class="text-center mb-12">
       <h2 class="text-3xl sm:text-4xl font-bold text-blue-800 dark:text-blue-300 mb-4 animate-slide-in-down">About Me</h2>
       <div class="border-b-4 border-blue-500 w-20 mx-auto"></div>
@@ -63,7 +63,7 @@
 
           <!-- CTA Button -->
           <a
-            href="../contact"
+            href="/contact"
             class="inline-block px-6 py-2 bg-blue-600 text-white rounded-full text-base font-semibold hover:bg-blue-700 transition-colors animate-pulse-slow"
           >
             Let's Work Together
@@ -74,7 +74,7 @@
   </div>
 
   <!-- Primary School  -->
-  <div class="max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 rounded-xl shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 rounded-xl shadow-lg">
       <div class="text-center mb-10">
         <h2 class="text-3xl sm:text-4xl font-bold text-blue-800 dark:text-blue-300 mb-4">
           My Primary School
@@ -100,7 +100,7 @@
 
   <!-- Secondary School -->
 
-  <div class="max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 rounded-xl shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 rounded-xl shadow-lg">
     <div class="text-center mb-10">
       <h2 class="text-3xl sm:text-4xl font-bold text-blue-800 dark:text-blue-300 mb-4">
         My Secondary School
@@ -125,7 +125,7 @@
 
   <!-- Hight School -->
 
-  <div class="max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 rounded-xl shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 rounded-xl shadow-lg">
     <div class="text-center mb-10">
       <h2 class="text-3xl sm:text-4xl font-bold text-blue-800 dark:text-blue-300 mb-4">
         My High School
@@ -150,7 +150,16 @@
 </template>
 
 <script setup>
-// No script setup needed unless adding interactivity
+defineProps({
+  title: String,
+  fullName: String,
+  profileImage: String,
+  bio: Array,
+  personalInfo: Array,
+  softSkills: Array,
+  ctaText: String,
+  ctaLink: String,
+})
 </script>
 
 <style>

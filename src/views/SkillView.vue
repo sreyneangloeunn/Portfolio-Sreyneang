@@ -60,4 +60,32 @@ const softSkills = [
   "🔄 Adaptability",
   "👥 Collaboration"
 ]
-</script>
+
+
+defineProps({
+  title: {
+    type: String,
+    default: 'My Skills',
+  },
+  description: {
+    type: String,
+    default: 'Technologies and tools I use to bring ideas to life',
+  },
+  languages: {
+    type: Array,
+    default: () => [],
+  },
+  frameworks: {
+    type: Array,
+    default: () => [],
+  },
+  tools: {
+    type: Array,
+    default: () => [],
+  },
+  softSkills: {
+    type: Array,
+    default: () => [],
+  }
+})
+// <!-- </script> -->

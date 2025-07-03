@@ -123,11 +123,20 @@
       </div>
     </div>
   </main>
+
+  <AboutMeView/>
+  <SkillView/>
+  <ProjectView/>
+  <ContactView/>
 </template>
 
 <script setup>
 import Card from '@/components/Card.vue';
 import { FolderIcon, DocumentTextIcon, EnvelopeIcon } from '@heroicons/vue/24/solid';
+import AboutMeView from './AboutMeView.vue';
+import ProjectView from './ProjectView.vue';
+import ContactView from './ContactView.vue';
+import SkillView from './SkillView.vue';
 </script>
 
 <style scoped>

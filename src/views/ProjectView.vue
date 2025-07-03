@@ -1,5 +1,5 @@
 <template>
-  <div class="projects-page max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800">
+  <div class="projects-page max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800">
     <h1 class="text-4xl font-bold text-blue-800 dark:text-blue-300 mb-4 text-center animate__animated animate__fadeInDown">🚀 My Projects</h1>
     <p class="text-lg text-gray-600 dark:text-gray-400 mb-12 text-center max-w-2xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
       Here are some of the projects I've worked on, both individually and in teams.
@@ -78,16 +78,16 @@ const projects = [
     tech: ['HTML', 'CSS', 'Sass', 'GitHub', 'Firebase'],
     repo: 'https://github.com/Soklennak/newproject.git',
     image: 'https://cdn.prod.website-files.com/6443d6d96a788f6942166567/64710dafbb86adbb8a096e2d_Website-Design-new.jpeg',
-    video: 'https://www.youtube.com/watch?v=ysz5S6PUM-U', // Example
   },
   {
     title: 'JAVASCRIPT PROJECT',
     date: 'January 14, 2025 – January 29, 2025',
     description:
-      'Designed to help users monitor their income and expenses for improved financial management. Worked as a team of 3.',
+    'Designed to help users monitor their income and expenses for improved financial management. Worked as a team of 3.',
     tech: ['JavaScript', 'HTML', 'CSS', 'GitHub'],
     repo: 'https://github.com/Mean-UN/Project-JavaScript-G14.git',
     image: 'https://i.ytimg.com/vi/vEROU2XtPR8/maxresdefault.jpg',
+    video: 'https://youtu.be/um2_5xEI9lA?si=6nRQ9MTGa82sqhT9', 
 
   },
   {

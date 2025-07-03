@@ -18,7 +18,7 @@ const profile = {
 }
 
 const navItems = [
-  { label: 'Home', link: '/', icon: HomeIcon },
+  { label: 'My Portfolio', link: '/', icon: HomeIcon },
   { label: 'About Me', link: '/about', icon: UserIcon },
   // { label: 'Services', link: '/services', icon: HeadphonesIcon },
   // { label: 'Blog', link: '/blog', icon: BookOpenIcon },

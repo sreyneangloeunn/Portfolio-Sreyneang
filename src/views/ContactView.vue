@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-6xl mx-auto px-6 py-12">
+  <section class="max-w-7xl mx-auto px-6 py-12">
     <!-- Header -->
     <div class="text-center mb-10">
       <h2 class="text-3xl font-bold text-blue-700 mb-2">Contact Me</h2>
@@ -118,6 +118,51 @@
 import { reactive } from 'vue';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/vue/24/solid';
 
+const props = defineProps({
+  email: {
+    type: String,
+    default: 'sreyneang.loeun@student.passernumeriques.org'
+  },
+  phone: {
+    type: String,
+    default: '+855 97 336 8734'
+  },
+  location: {
+    type: String,
+    default: 'Street 371, Phumpeang Chhuk (Borey Sorla), Sangkat Tek Thla, Khan Sen Sok, Phnom Penh'
+  },
+  socialLinks: {
+    type: Array,
+    default: () => ([
+      {
+        name: 'Facebook',
+        href: 'https://www.facebook.com/sreyneang.loeun',
+        icon: '@/assets/icon/facebook.svg'
+      },
+      {
+        name: 'Google',
+        href: 'mailto:loeurnsreyneang05052006@gmail.com',
+        icon: '@/assets/icon/google.svg'
+      },
+      {
+        name: 'Telegram',
+        href: 'https://t.me/SreyneangLoeun',
+        icon: '@/assets/icon/telegram.svg'
+      },
+      {
+        name: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/sreyneang-loeun-58b129343/',
+        icon: '@/assets/icon/linkedin.svg'
+      },
+      {
+        name: 'Instagram',
+        href: 'https://www.instagram.com/loeurnsreyneang/',
+        icon: '@/assets/icon/instagram.svg'
+      }
+    ])
+  }
+});
+
 const form = reactive({
   name: '',
   email: '',
@@ -132,8 +177,10 @@ function submitForm() {
 }
 </script>
 
+
 <style scoped>
 .group:hover .transition-transform {
   transform: scale(1.1);
 }
+
 </style>
